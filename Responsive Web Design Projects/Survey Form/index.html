@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+        <h1 id="title">Gundam Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to tell us about your experience about Gundam
+        </p>
+        <form id="survey-form" action="">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="name"   placeholder="Enter your name" required></input>
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="name" placeholder="Enter email" required>
+          <label id="number-label" for="age">Age</label>
+          <input id="number" type="number" name="age" min="10" max="99" placeholder="99">
+          <label for="dropdown">Which best describes your current role?</label>
+          <div id="dropdown">
+            <select name="dropdown-select">
+              <option value="0">Select current role</option>
+              <option value="1">Student</option>
+              <option value="2">Full Time Job</option>
+              <option value="3">Part Time Job</option>
+              <option value="4">Full Time Learner</option>
+              <option value="5">Other</option>
+              <option value="6">Prefer Not to Say</option>
+            </select>
+          </div>
+        
+          <div id="recommend-container">
+            <p id="radio-label" for="radio">Would you recommend Gundam to a friend?</p>
+            <input type="radio" id="radio1" name="recommend" value="Yes">
+            <label for="radio1">Yes</label>
+            <input type="radio" id="radio2" name="recommend" value="No">
+            <label for="radio2">No</label>
+            <input type="radio" id="radio3" name="recommend" value="Maybe">
+            <label for="radio3">Maybe</label>
+          </div>
+        
+            <div id="grade-container">Which Gundam Grades have you done?
+              <div>
+              <input type="checkbox" value="first-grade" id="fg">
+              <label for="fg">First Grade(FG)</label>
+              </div>
+              <div>
+              <input type="checkbox" value="high-grade" id="hg">
+              <label for="fg">High Grade(HG)</label>
+              </div>
+              <div>
+              <input type="checkbox" value="master-grade" id="mg">
+              <label for="mg">Master Grade(MG)</label>
+              </div>
+              <div>
+              <input type="checkbox" value="real-grade" id="rg">
+              <label for="rg">Real Grade(RG)</label>
+              </div>
+              <div>
+              <input type="checkbox" value="perfect-grade" id="pg">
+              <label for="pg">Perfect Grade(PG)</label>
+              </div>
+            </div>
+            <p>Any comments or suggestions?</p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+        <input type="submit" value="Submit" id="submit">
+        </form>
+        
+      </main>
+      
+</body>
+</html>
