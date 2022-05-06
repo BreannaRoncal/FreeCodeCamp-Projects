@@ -1,0 +1,26 @@
+body{
+  display:flex;
+  flex-direction:column;
+}
+#contact{
+  margin-top:1000px;
+}
+#navbar{
+  position: fixed; 
+  top:0;
+  
+  width:100%;
+
+}
+#welcome-section{
+  margin-top:60px;
+  height:100vh;
+} 
+@media (max-width:600px){
+  navbar{
+    position:fixed;
+    right:0;
+    background-color:aliceblue;
+  }
+  
+}
