@@ -1,0 +1,22 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "navbar header";
+}
+#navbar {
+  grid-area: navbar;
+  background-color: lightgray;
+}
+
+#main-doc {
+  grid-area: header;
+  background-color: aliceblue;
+}
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+}
