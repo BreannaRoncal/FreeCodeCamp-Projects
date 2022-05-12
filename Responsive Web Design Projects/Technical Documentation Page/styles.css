@@ -12,6 +12,9 @@ body {
   background-color: lightgray;
   display: flex;
   flex-direction: column;
+  position:fixed;
+  left:0;
+  height:100vh;
 }
 .nav-list {
   padding-left: 0;
@@ -52,7 +55,7 @@ header {
 }
 
 .main-section {
-  border-left: 2px solid black;
+  
   padding-top: 30px;
   padding-left: 50px;
 }
